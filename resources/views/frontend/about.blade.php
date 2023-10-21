@@ -3,7 +3,7 @@
 
 <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
     <!-- <div class="overlay"></div> -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
             <div class="col-md-6 ftco-animate pb-0 text-start">
                 <p class="breadcrumbs">

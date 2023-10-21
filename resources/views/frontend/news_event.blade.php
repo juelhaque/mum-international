@@ -1,13 +1,27 @@
 @extends('frontend.layouts.app')
 @section('content')
+    <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+        <!-- <div class="overlay"></div> -->
+        <div class="container-fluid">
+            <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
+                <div class="col-md-6 ftco-animate pb-0 text-start">
+                    <p class="breadcrumbs">
+                        <span class="mr-2"><a href="{{ route('frontend.home') }}">Home <i class="fas fa-angle-right"></i></a></span>
+                        {{-- <span class="mr-2"><a href="{{ route('frontend.news_event') }}">New & Events <i class="fas fa-angle-right"></i></a></span> --}}
+                        <span> News & Events <i class="fas fa-angle-right"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ======================= Products -->
-    <section class="portfolio pb-0" style="margin-top: 100px">
+    <section class="portfolio pb-0">
         <!-- Featured News Slider Start -->
         <div class="container-fluid pt-2 mb-5">
             <div class="mb-3">
                 <h4 class="text-uppercase font-weight-bold text-center" style="font-size: 35px">Featured News</h4>
             </div>
-            <div class="row mx-2">
+            <div class="row">
                 @foreach ($news_events as $news_event)
                     <div class="col-lg-3">
                         <div class="position-relative overflow-hidden" style="height: 300px;">
@@ -29,9 +43,9 @@
             </div>
         </div>
 
-        <div class="container-fluid ml-2">
-            <div class="row m-3">
-                <div class="col-lg-9">
+        <div class="container-fluid">
+            <div class="row" style="margin-left: 0.8rem; margin-right: 2px;">
+                <div class="col-lg-9 pr-3">
                     <h4 class="pb-2 text-uppercase font-weight-bold text-center" style="font-size: 30px">Latest News</h4>
                     <div class="row" style=" border-radius: 2px;">
                         {{-- <div class="col"> --}}
@@ -77,7 +91,7 @@
                                             </div>
                                             <div class="col-8 py-3">
                                                 <h5 style="font-size: 14px;">{{ $news_events->name }}</h5>
-                                                <h6 class="mb-0" style="font-size: 11px">
+                                                <h6 class="mb-0" style="font-size: 11px; padding-right: 2px;">
                                                     {{ Illuminate\Support\Str::limit($news_events->description, 50) }}</h6>
                                             </div>
                                         </div>
