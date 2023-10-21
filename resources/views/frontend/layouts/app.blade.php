@@ -15,12 +15,16 @@
     <link rel="shortcut icon" href="{{ asset($company_profile->company_logo) }}">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('ui/frontend/assets/vendor/font-awesome/css/all.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('ui/frontend/assets/vendor/themify-icons/css/themify-icons.css') }}" />
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('ui/frontend/assets/vendor/font-awesome/css/all.min.css') }}" />
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('ui/frontend/assets/vendor/themify-icons/css/themify-icons.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('ui/frontend/assets/vendor/animate/animate.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('ui/frontend/assets/vendor/glightbox/css/glightbox.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('ui/frontend/assets/vendor/tiny-slider/tiny-slider.css') }}">
@@ -70,6 +74,7 @@
 
     <!--Template Functions-->
     <script src="{{ asset('ui/frontend/assets/js/functions.js') }}"></script>
+
 
     @stack('front-js')
 

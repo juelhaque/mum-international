@@ -363,7 +363,7 @@ var e = {
                       }
                   }
               });
-          }); 
+          });
         }
     },
     // END: Tiny Slider
@@ -572,10 +572,10 @@ var e = {
             var ctx = canvas.getContext('2d')
             canvas.width = canvas.parentNode.offsetWidth
             canvas.height = canvas.parentNode.offsetHeight
-            
+
             let step = 0
             const lines = 4
-        
+
             function loop() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height)
                 step++
@@ -593,13 +593,24 @@ var e = {
                     ctx.closePath()
                     ctx.fill()
                 }
-        
+
                 requestAnimationFrame(loop)
             }
 		    loop()
         }
     },
     // END: wave
-    
+
 };
 e.init();
+
+
+
+
+
+
+
+
+// Typejs ====================================================================
+
+

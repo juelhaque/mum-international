@@ -74,7 +74,7 @@
     <!--footer copyright -->
     <div class="footer-copyright py-0" style="background: #23262b">
         <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-start">
+            <div class="d-md-flex justify-content-between align-items-center py-2 text-center text-md-start">
                 <!-- copyright text -->
                 <div class="copyright-links">© Copyright <a href="http://muminternational.com/" target="_blank"><b>Mum International</b></a> All rights reserved </div>
                 <!-- copyright links-->

@@ -1,4 +1,3 @@
-
 <header class="header-static navbar-light">
     <!-- Navbar top start-->
     <div class="navbar-top d-none d-lg-block">
@@ -43,7 +42,7 @@
                             <a class="social-icons-link w-auto px-2" href="{{ $company_profile->youtube }}"
                                 target="_blank"><i class="fab fa-youtube"></i></a>
                         </li>
-                    </ul>                  
+                    </ul>
                 </div>
             </div>
         </div>
@@ -58,8 +57,7 @@
                 <div class="d-flex justify-content-start text-center" style="height: 35px;">
                     <img class="navbar-brand-item" style="border-radius: 2px"
                         src="{{ asset($company_profile->company_logo) }}" alt="Logo">
-                    <h3 class="logo-text" style="color: whitesmoke; font-size: 24px;">Mum International
-                    </h3>
+                    <h3 class="logo-text" style="color: whitesmoke; font-size: 24px;"><span class="">Mum International</span></h3>
                 </div>
             </a>
             <!-- Menu opener button -->
@@ -106,7 +104,8 @@
                         <ul class="dropdown-menu" aria-labelledby="portfolioMenu">
                             @foreach ($categories as $category)
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('frontend.catproduct', $category->id) }}">{{ $category->name }}</a>
+                                    <a class="dropdown-item"
+                                        href="{{ route('frontend.catproduct', $category->id) }}">{{ $category->name }}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -114,12 +113,14 @@
                     <!-- Menu item 5 Elements-->
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="{{ route('frontend.photo_gallery') }}" id="pagesMenu"
-                            aria-haspopup="true" aria-expanded="false"><span class="nav-button">Photo Gallery</span></a>
+                            aria-haspopup="true" aria-expanded="false"><span class="nav-button">Photo
+                                Gallery</span></a>
                     </li>
                     <!-- Menu item 5 Elements-->
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="{{ route('frontend.news_event') }}" id="pagesMenu"
-                            aria-haspopup="true" aria-expanded="false"><span class="nav-button">News & Event</span></a>
+                            aria-haspopup="true" aria-expanded="false"><span class="nav-button">News &
+                                Event</span></a>
                     </li>
                     <!-- Menu item 6 Docs-->
                     <li class="nav-item dropdown">
@@ -133,3 +134,8 @@
     </nav>
     <!-- Logo Nav End -->
 </header>
+
+
+@push('front-js')
+
+@endpush
