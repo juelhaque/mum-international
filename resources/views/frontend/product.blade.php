@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+<section class="first-section hero-wrap hero-wrap-2">
     <!-- <div class="overlay"></div> -->
     <div class="container-fluid">
         <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
@@ -22,16 +22,16 @@
                 <h2 class="border-bottom text-center"><b>FEATURED PRODUCTS</b></h2>
             </div>
             <div class="col-md-12">
-                <div class="row portfolio-wrap grid items-5">
+                <div class="row portfolio-wrap grid">
                     <!-- portfolio-card -->
                     @foreach ($products as $product)
-                        <div class="col-md-2 portfolio-card isotope-item digital py-3">
+                        <div class="col-6 col-md-2 portfolio-card isotope-item digital py-3">
                             <a style="color: var(--bs-body-color)"
                                 href="{{ route('frontend.product_details', $product->id) }}">
                                 <div class="portfolio-card-body">
                                     <div class="portfolio-card-header">
                                         <img src="{{ asset($product->image) }}" alt=""
-                                            style="width: 100%; height: 180px ">
+                                            style="width: 100%; ">
                                     </div>
                                     <div class="portfolio-card-footer px-3" style="text-align: justify;">
                                         <h5 class="card-title mt-2">{{ $product->name }}</h5>

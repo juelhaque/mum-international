@@ -18602,7 +18602,7 @@ footer .widget {
 .portfolio-card .portfolio-card-body {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 325px;
+  /* height: 325px; */
 }
 
 .portfolio-card .portfolio-card-body .portfolio-card-footer .info-title {
@@ -21734,7 +21734,7 @@ p.card-text {
     color: #343a40 !important;
 
 } */
-.slider-section {
+.first-section {
   margin-top: 100px;
 }
 .card-text{
@@ -21755,11 +21755,15 @@ p.card-text {
 .video-frame {
   height: 200px;
 }
+.welcome-text {
+  font-size: 22px;
+}
+
 @media(min-width:360px) and (max-width: 420px) {
   .logo-text {
     font-size: 15px;
   }
-  .slider-section {
+  .first-section {
     margin-top: 60px;
   }
   .carousel-item .img-fluid {
@@ -21784,12 +21788,21 @@ p.card-text {
     height:auto;
   }
   .border-bottom {
-    width: 200px;
+    width: 220px;
   }
   .video-frame {
     height: auto;
   }
   .navbar {
     height: auto;
+  }
+  footer .widget {
+    margin-left: 0px;
+  }
+  .copyright-links {
+    font-size: 12px;
+  }
+  .welcome-text {
+    font-size: 15px;
   }
 }

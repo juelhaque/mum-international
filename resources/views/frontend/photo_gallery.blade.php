@@ -1,6 +1,7 @@
+
 @extends('frontend.layouts.app')
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+<section class="first-section hero-wrap hero-wrap-2">
     <!-- <div class="overlay"></div> -->
     <div class="container-fluid">
         <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
@@ -22,10 +23,10 @@
                 <h2 class="border-bottom text-center"><b>PHOTO GALLERY</b></h2>
             </div>
             <div class="col-md-12">
-                <div class="row gy-3 portfolio-wrap grid items-5">
+                <div class="row gy-3 portfolio-wrap grid">
                     <!-- Image-card -->
                     @foreach ($photo_galleries as $photo_gallery)
-                        <div class="col-md-2 portfolio-card isotope-item digital py-3">
+                        <div class="col-6 col-md-2 portfolio-card isotope-item digital py-3">
                             <div class="portfolio-card-body">
                                 <div class="portfolio-card-header">
                                     <img src="{{ asset($photo_gallery->image) }}" alt=""

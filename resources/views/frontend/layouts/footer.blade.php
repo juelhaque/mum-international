@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <!-- Footer widget 3 -->
-                <div class="col-md-2 col-sm-6 d-flex justify-content-center mt-3">
+                <div class="col-md-2 col-sm-6 d-flex justify-content-md-center mt-3">
                     <div class="widget">
                         <h4 class="mb-3" style="color: white; border-bottom: 2px solid#fff;">Useful LInks</h4>
                         <ul class="nav flex-column primary-hover font">
@@ -50,20 +50,20 @@
                     </div>
                 </div>
                 <!-- Footer widget 4 -->
-                <div class="col-md-2 d-flex justify-content-center mt-3">
+                <div class="col-md-2 d-flex justify-content-md-center mt-3">
                     <div class="ftco-footer-widget mb-4" style="margin-right: 2rem">
                         <h4 class="ftco-heading-2 mb-3" style="color: white; border-bottom: 2px solid#fff;">Follow Us</h4>
                         <ul class="list-group list-group-borderless primary-hover font">
                             <li class="d-flex mb-2"><a style="color: #fff" href="{{ $company_profile->facebook }}" target="_blank"><i
-                                        class="me-3 display-9 fab fa-facebook-f"></i>Facebook</a></li>
+                                        class="display-9 fab fa-facebook-f"></i>Facebook</a></li>
                             <li class="d-flex mb-2"><a style="color: #fff" href="{{ $company_profile->twitter }}" target="_blank"><i
-                                        class="me-3 display-9 fab fa-twitter"></i>Twitter</a></li>
+                                        class="display-9 fab fa-twitter"></i>Twitter</a></li>
                             <li class="d-flex mb-2"><a style="color: #fff" href="{{ $company_profile->instagram }}" target="_blank"><i
-                                        class="me-3 display-9 fab fa-instagram"></i>Instagram</a></li>
+                                        class="display-9 fab fa-instagram"></i>Instagram</a></li>
                             <li class="d-flex mb-2"><a style="color: #fff" href="{{ $company_profile->linkedin }}" target="_blank"><i
-                                        class="me-3 display-9 fab fa-linkedin"></i>Linkedin</a></li>
+                                        class="display-9 fab fa-linkedin"></i>Linkedin</a></li>
                             <li class="d-flex mb-2"><a style="color: #fff" href="{{ $company_profile->youtube }}" target="_blank"><i
-                                        class="me-3 display-9 fab fa-youtube"></i>Youtube</a></li>
+                                        class="display-9 fab fa-youtube"></i>Youtube</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <!-- copyright text -->
                 <div class="copyright-links">© Copyright <a href="http://muminternational.com/" target="_blank"><b>Mum International</b></a> All rights reserved </div>
                 <!-- copyright links-->
-                <div class="copyright-links primary-hover mt-3 mt-md-0">
+                <div class="copyright-links primary-hover mt-2 mt-md-0">
                     <div>Design & Developed by <a href="https://linktechbd.com/" target="_blank"><b>Link-Up Technology Ltd</b></a></div>
                 </div>
             </div>

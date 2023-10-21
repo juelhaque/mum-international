@@ -69,9 +69,20 @@
     <script src="{{ asset('ui/frontend/assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
 
     <!--Template Functions-->
-    <script src="{{ asset('ui/frontend/assets/js/functions.js') }}"></script>
-
-    @stack('front-js')
+   <script src="{{ asset('ui/frontend/assets/js/functions.js') }}"></script>
+   <script src="{{ asset('ui/frontend/assets/js/typed.js') }}"></script>
+   <script>
+      $(function(){
+         var typed = new Typed('#typed', {
+            strings: ["<?php echo $company_profile->about_title ?>"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+         });
+      });
+   </script>
+   
+   @stack('front-js')
 
 </body>
 

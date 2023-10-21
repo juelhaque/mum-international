@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+    <section class="first-section hero-wrap hero-wrap-2">
         <!-- <div class="overlay"></div> -->
         <div class="container-fluid">
             <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
@@ -22,7 +22,7 @@
                 <h2 class="heading"><b>CONTACT WITH US</b></h2>
             </div>
             <div class="row mb-5">
-                <div class="col-md-4">
+                <div class="col-6 col-md-4">
                     <div class="dbox w-100 text-center">
                         <div class="icon">
                             <span class="fas fa-map-marker-alt"></span>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-6 col-md-4">
                     <div class="dbox w-100 text-center">
                         <div class="icon">
                             <span class="fa fa-phone"></span>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
                     <div class="dbox w-100 text-center ">
                         <div class="icon">
                             <span class="fa fa-paper-plane"></span>

@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('ui/frontend/assets/vendor/viewbox/viewbox.css') }}">
 @endpush
 @section('content')
-    <section class="slider-section p-0">
+    <section class="first-section p-0">
         <div class="container-fluid">
             <div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
                 <ol class="carousel-indicators">
@@ -195,14 +195,14 @@
                     <h2 class="border-bottom text-center"><b>PHOTO GALLERY</b></h2>
                 </div>
                 <div class="col-md-12">
-                    <div class="row gy-3 portfolio-wrap grid">
+                    <div class="row gy-1 portfolio-wrap grid">
                         <!-- Image-card -->
                         @foreach ($photo_galleries as $photo_gallery)
                             <div class="col-6 col-md-2 portfolio-card isotope-item digital py-3">
                                 <div class="portfolio-card-body" style="position: relative">
                                     <div class="portfolio-card-header">
                                         <img src="{{ asset($photo_gallery->image) }}" alt=""
-                                            style="height: 180px; width: 100%; border: 1px solid #00a652">
+                                            style="height:180px;width:100%;border:1px solid #00a652">
                                     </div>
                                     <div class="portfolio-card-footer">
                                         <a class="full-screen" href="{{ asset($photo_gallery->image) }}"
