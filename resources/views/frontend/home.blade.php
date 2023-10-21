@@ -154,7 +154,7 @@
                     <div class="row portfolio-wrap grid">
                         <!-- portfolio-card -->
                         @foreach ($products as $product)
-                            <div class="col-6 col-sm-4 col-md-2 portfolio-card isotope-item digital py-3">
+                            <div class="col-6 col-md-3 col-lg-2 portfolio-card isotope-item digital py-3">
                                 <a style="color: var(--bs-body-color)"
                                     href="{{ route('frontend.product_details', $product->id) }}">
                                     <div class="portfolio-card-body" style="">
@@ -198,7 +198,7 @@
                     <div class="row gy-1 portfolio-wrap grid">
                         <!-- Image-card -->
                         @foreach ($photo_galleries as $photo_gallery)
-                            <div class="col-6 col-md-2 portfolio-card isotope-item digital py-3">
+                            <div class="col-6 col-md-3 col-lg-2 portfolio-card isotope-item digital py-3">
                                 <div class="portfolio-card-body" style="position: relative">
                                     <div class="portfolio-card-header">
                                         <img src="{{ asset($photo_gallery->image) }}" alt=""
