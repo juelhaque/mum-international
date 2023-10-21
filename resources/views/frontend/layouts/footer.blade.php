@@ -5,7 +5,7 @@
             <div class="row">
                 <!-- Footer widget 1 -->
                 <div class="col-md-4 mt-3">
-                    <div class="widget" style="margin-left: 3rem">
+                    <div class="widget">
                         <a href="{{ route('frontend.home') }}" class="footer-logo">
                             <!-- footer logo Start -->
                             {{-- <img class="footer-logo-item" src="{{ asset($company_profile->company_logo) }}"alt="Logo"> --}}
@@ -21,7 +21,7 @@
                 </div>
                 <!-- Footer widget 2 -->
                 <div class="col-md-4 col-sm-6 mt-3">
-                    <div class="widget address" style="margin-left: 3rem">
+                    <div class="widget address">
                         <h4 class="border-bottom-foot mb-4">Contact information</h4>
                         <ul class="list-group list-group-borderless font">
                             <li class="d-flex mb-2"><i

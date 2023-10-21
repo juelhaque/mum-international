@@ -4544,6 +4544,7 @@ textarea.form-control-lg {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-bottom: 0;
   padding-left: var(--bs-gutter-x, 0.75rem);
+
   /* background-color: #00a652; */
 }
 .navbar > .container,
@@ -16774,6 +16775,7 @@ textarea.form-control-lg {
 }
 .navbar {
   z-index: 9;
+  height: 70px;
 }
 
 .navbar-nav .nav-link {
@@ -16829,6 +16831,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
     margin-top: 13px;
     margin-left: 1rem;
     width: fit-content;
+    color: whitesmoke;
+    font-size: 24px;
 }
 
 .navbar-top {
@@ -18517,6 +18521,7 @@ footer .footer-logo-item {
 footer .widget {
   position: relative;
   margin-bottom: 0px;
+  margin-left: 3rem;
   /* padding-left: 2rem !important; */
 }
 
@@ -18594,6 +18599,7 @@ footer .widget {
 .portfolio-card .portfolio-card-body {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 325px;
 }
 
 .portfolio-card .portfolio-card-body .portfolio-card-footer .info-title {
@@ -18635,6 +18641,8 @@ footer .widget {
   border-radius: 3px;
 }
 .portfolio-card .portfolio-card-header img {
+  width:100%;
+  height:180px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -21723,7 +21731,9 @@ p.card-text {
     color: #343a40 !important;
 
 } */
-
+.slider-section {
+  margin-top: 100px;
+}
 .card-text{
     color: #343a40;
     font-weight: 400;
@@ -21731,4 +21741,52 @@ p.card-text {
 
 .card-title{
     font-weight: bolder;
+}
+
+.about-heading {
+  font-weight: bolder;
+  font-size: 22px;
+  color: #00a652;
+  text-transform: uppercase;
+}
+.video-frame {
+  height: 200px;
+}
+@media(min-width:360px) and (max-width: 420px) {
+  .logo-text {
+    font-size: 15px;
+  }
+  .slider-section {
+    margin-top: 60px;
+  }
+  .carousel-item .img-fluid {
+    height: 250px;
+  }
+  .about-heading {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  h2, .h2 {
+    font-size: calc(1.0rem + 0.9vw);
+  }
+  section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .portfolio-card .portfolio-card-header img {
+    height: 120px
+  }
+  .portfolio-card .portfolio-card-body {
+    height:auto;
+  }
+  .border-bottom {
+    width: 200px;
+  }
+  .video-frame {
+    height: auto;
+  }
+  .navbar {
+    height: auto;
+  }
 }
