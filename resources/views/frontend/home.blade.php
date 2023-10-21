@@ -50,7 +50,7 @@
     <!-- ======================= Main banner -->
 
     <!-- ======================= about us  -->
-    <section style="padding-bottom: 0px;padding-top: 0px;margin-top: 20px;">
+    <section style="padding-bottom: 0px;padding-top: 0px; margin-top: 30px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -70,7 +70,7 @@
                     <h4 class="mt-md-2 mb-1"
                         style="font-weight: bolder;font-size: 22px;color: #00a652;text-transform: uppercase;">Welcome to
                         {{ $company_profile->about_title }}</h4>
-                        
+
                     <div  style="color: rgb(25, 26, 25); font-weight: 500;">
                         <p>{{ $company_profile->short_description }}</p>
                         <p>{!! Illuminate\Support\Str::limit($company_profile->about_description, 890, '...') !!}

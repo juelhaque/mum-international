@@ -1,7 +1,21 @@
 @extends('frontend.layouts.app')
 @section('content')
+    <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+        <!-- <div class="overlay"></div> -->
+        <div class="container-fluid">
+            <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
+                <div class="col-md-6 ftco-animate pb-0 text-start">
+                    <p class="breadcrumbs">
+                        <span class="mr-2"><a href="{{ route('frontend.home') }}">Home <i class="fas fa-angle-right"></i></a></span>
+                        {{-- <span class="mr-2"><a href="{{ route('frontend.news_event') }}">New & Events <i class="fas fa-angle-right"></i></a></span> --}}
+                        <span> Contact Us <i class="fas fa-angle-right"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- =======================v contact -->
-    <section class="contact-page" style="margin-top: 100px">
+    <section class="contact-page">
         <div class="container-fluid">
             @include('message')
             <div class="d-flex justify-content-center mb-4">
@@ -10,7 +24,7 @@
             <div class="row mb-5">
                 <div class="col-md-4">
                     <div class="dbox w-100 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
+                        <div class="icon">
                             <span class="fas fa-map-marker-alt"></span>
                         </div>
                         <div class="text">
@@ -21,7 +35,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="dbox w-100 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
+                        <div class="icon">
                             <span class="fa fa-phone"></span>
                         </div>
                         <div class="text">
@@ -32,7 +46,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="dbox w-100 text-center ">
-                        <div class="icon d-flex align-items-center justify-content-center">
+                        <div class="icon">
                             <span class="fa fa-paper-plane"></span>
                         </div>
                         <div class="text">
@@ -106,7 +120,7 @@
                                 </div>
                                 <!-- submit button -->
                                 <div class="col-md-12 d-grid">
-                                    <button class="btn btn-dark m-0" type="submit">Send Message</button>
+                                    <button class="btn btn-dark m-0" type="submit" style="background: rgb(194, 194, 194); color: #373838;">Send Message</button>
                                 </div>
                             </div>
                         </form>
