@@ -50,14 +50,15 @@
     <!-- Navbar top End-->
 
     <!-- Logo Nav Start -->
-    <nav class="navbar navbar-expand-lg" style="height: 70px;">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid" style="background-color: #00a652;">
             <!-- Logo -->
             <a class="navbar-brand" href="{{ route('frontend.home') }}">
                 <div class="d-flex justify-content-start text-center" style="height: 35px;">
                     <img class="navbar-brand-item" style="border-radius: 2px"
                         src="{{ asset($company_profile->company_logo) }}" alt="Logo">
-                    <h3 class="logo-text" style="color: whitesmoke; font-size: 24px;"><span class="">Mum International</span></h3>
+                    <h3 class="logo-text"><span id="typed"></span></h3>
+                    {{-- <h3 class="logo-text">{{ $company_profile->about_title }}</h3> --}}
                 </div>
             </a>
             <!-- Menu opener button -->

@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('ui/frontend/assets/vendor/viewbox/viewbox.css') }}">
 @endpush
 @section('content')
-    <section class="p-0" style="margin-top:100px">
+    <section class="first-section p-0">
         <div class="container-fluid">
             <div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
                 <ol class="carousel-indicators">
@@ -67,8 +67,8 @@
                 </div>
                 <!-- right -->
                 <div class="col-md-6" style="text-align: justify;">
-                    <h4 class="mt-md-2 mb-1"
-                        style="font-weight: bolder;font-size: 22px;color: #00a652;text-transform: uppercase;">Welcome to
+                    <h4 class="about-heading mt-md-2 mb-1"
+                        style="">Welcome to
                         {{ $company_profile->about_title }}</h4>
 
                     <div  style="color: rgb(25, 26, 25); font-weight: 500;">
@@ -151,16 +151,16 @@
                     <h2 class="border-bottom text-center"><b>FEATURED PRODUCTS</b></h2>
                 </div>
                 <div class="col-md-12">
-                    <div class="row portfolio-wrap grid items-5">
+                    <div class="row portfolio-wrap grid">
                         <!-- portfolio-card -->
                         @foreach ($products as $product)
-                            <div class="col-md-2 portfolio-card isotope-item digital py-3">
+                            <div class="col-6 col-sm-4 col-md-2 portfolio-card isotope-item digital py-3">
                                 <a style="color: var(--bs-body-color)"
                                     href="{{ route('frontend.product_details', $product->id) }}">
-                                    <div class="portfolio-card-body" style="height: 325px;">
+                                    <div class="portfolio-card-body" style="">
                                         <div class="portfolio-card-header">
                                             <img src="{{ asset($product->image) }}" alt=""
-                                                style="width: 100%; height: 180px ">
+                                                style="">
                                         </div>
                                         <div class="portfolio-card-footer px-3" style="text-align: justify;">
                                             <h5 class="card-title mt-2">{{ $product->name }}</h5>
@@ -195,14 +195,14 @@
                     <h2 class="border-bottom text-center"><b>PHOTO GALLERY</b></h2>
                 </div>
                 <div class="col-md-12">
-                    <div class="row gy-3 portfolio-wrap grid items-5">
+                    <div class="row gy-1 portfolio-wrap grid">
                         <!-- Image-card -->
                         @foreach ($photo_galleries as $photo_gallery)
-                            <div class="col-md-2 portfolio-card isotope-item digital py-3">
+                            <div class="col-6 col-md-2 portfolio-card isotope-item digital py-3">
                                 <div class="portfolio-card-body" style="position: relative">
                                     <div class="portfolio-card-header">
                                         <img src="{{ asset($photo_gallery->image) }}" alt=""
-                                            style="height: 180px; width: 100%; border: 1px solid #00a652">
+                                            style="height:180px;width:100%;border:1px solid #00a652">
                                     </div>
                                     <div class="portfolio-card-footer">
                                         <a class="full-screen" href="{{ asset($photo_gallery->image) }}"
@@ -253,7 +253,7 @@
                     <div class="col">
                         <div class="text-center">
                             <div class="card-img-top d-md-block">
-                                <iframe style="height: 200px; width:100%;" src="{{ asset($video_gallery->video) }}"
+                                <iframe class="video-frame" style="width:100%;" src="{{ asset($video_gallery->video) }}"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen>

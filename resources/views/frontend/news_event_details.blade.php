@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
     <!-- News-details -->
-    <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+    <section class="first-section hero-wrap hero-wrap-2">
         <!-- <div class="overlay"></div> -->
         <div class="container-fluid">
             <div class="row align-items-start justify-content-start">
@@ -26,10 +26,10 @@
                     </div>
                     <div class="ftco-animate">
                         <img src="{{ asset($news_events->image) }}" alt="" class="img-fluid sigle_image"
-                            style="width: 50%; height: 450px; object-fit: contain; float: left;">
+                            style="width: 50%; object-fit:contain;float:left;">
                     </div>
                     <div class="ftco-animate mt-3">
-                        <p class="text-start" style="color: rgb(41, 40, 40)">{{ $news_events->description }}</p>
+                        <p style="color: rgb(41, 40, 40); text-align:justify">{{ $news_events->description }}</p>
                     </div>
                 </div>
                 <div class="col-md-4 mt-20">

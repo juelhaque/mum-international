@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-    <section class="hero-wrap hero-wrap-2" style="margin-top: 100px">
+    <section class="first-section hero-wrap hero-wrap-2">
         <!-- <div class="overlay"></div> -->
         <div class="container-fluid">
             <div class="row align-items-start justify-content-start" style="box-shadow: 0px 15px 10px -15px #03a503;">
