@@ -18646,6 +18646,7 @@ footer .widget {
 .portfolio-card .portfolio-card-header img {
   width:100%;
   height:180px;
+  object-fit: contain;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
