@@ -76,7 +76,8 @@
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center py-2 text-center text-md-start">
                 <!-- copyright text -->
-                <div class="copyright-links">© Copyright <a href="http://muminternational.com/" target="_blank"><b>Mum International</b></a> All rights reserved </div>
+                <div class="copyright-links">© Copyright <?php echo date("Y"); ?>
+                    <a href="http://muminternational.com/" target="_blank"><b>Mum International</b></a> All rights reserved </div>
                 <!-- copyright links-->
                 <div class="copyright-links primary-hover mt-2 mt-md-0">
                     <div>Design & Developed by <a href="https://linktechbd.com/" target="_blank"><b>Link-Up Technology Ltd</b></a></div>
