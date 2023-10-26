@@ -85,7 +85,7 @@
     <!-- ======================= about us  -->
 
     <!-- Product category slider start  -->
-    <section>
+    <section style="background: #90ee90a1;">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex justify-content-center mb-3">
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="mb-2">
-                <p class="text-end mt-3">
+                <p class="text-end mb-3">
                     <a href="{{ route('frontend.product') }}" class="btn btn-red btn-sm mx-4">View All</a>
                 </p>
             </div>
@@ -188,7 +188,7 @@
     <!-- ======================= Products -->
 
     <!-- Image gellary -->
-    <section class="portfolio mb-3">
+    <section class="portfolio pb-3" style="background-color: #aaa6a68a">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex justify-content-center mb-0">
@@ -202,7 +202,7 @@
                                 <div class="portfolio-card-body" style="position: relative">
                                     <div class="portfolio-card-header">
                                         <img src="{{ asset($photo_gallery->image) }}" alt=""
-                                            style="height:180px;width:100%;border:1px solid #00a652">
+                                            style="background: #fff; height:180px; object-fit: fill; border:1px solid #00a652">
                                     </div>
                                     <div class="portfolio-card-footer">
                                         <a class="full-screen" href="{{ asset($photo_gallery->image) }}"
@@ -215,12 +215,17 @@
                     </div>
                 </div>
             </div>
+            <div class="mb-2">
+                <p class="text-end mb-3">
+                    <a href="{{ route('frontend.photo_gallery') }}" class="btn btn-red btn-sm mx-4">View All</a>
+                </p>
+            </div>
         </div>
     </section>
     <!-- ======================= Image gellary -->
 
     <!-- Client slider start  -->
-    <section style="background: #343a40">
+    <section style="background: #343a40; padding-bottom: 4px;">
         <div class="container-fluid mb-4">
             <div class="row">
                 <div class="d-flex justify-content-center mb-3">

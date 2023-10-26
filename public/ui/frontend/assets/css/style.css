@@ -17287,7 +17287,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 .nav.flex-column .nav-link {
   padding-left: 0;
-  padding-top: 0.3rem;
+  padding-top: 0.1rem;
   /* padding-bottom: 0.3rem; */
 }
 
@@ -18104,7 +18104,7 @@ textarea {
 =================================*/
 section {
     padding-top: 20px;
-    /* padding-bottom: 20px; */
+    padding-bottom: 15px;
 }
 
 .section-pt {

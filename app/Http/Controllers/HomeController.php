@@ -20,7 +20,7 @@ class HomeController extends Controller
         $data['sliders'] = Slider::get();
         $data['products'] = Product::get()->take(18);
         $data['categories'] = Category::get();
-        $data['photo_galleries'] = PhotoGallery::get()->take(18);
+        $data['photo_galleries'] = PhotoGallery::latest()->get()->take(18);
         $data['company_profiles'] = CompanyProfile::get();
         $data['clients'] = Client::get();
         $data['video_galleries'] = VideoGallery::get()->take(5);
