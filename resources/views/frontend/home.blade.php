@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div style="border-top: 12px solid #00a652;border-bottom: 12px solid #00a652;"></div>
+                    <div style="border-top: 3px solid #b9f4b9 ;border-bottom: 3px solid #b9f4b9;"></div>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -62,7 +62,7 @@
                 <div class="col-md-6">
                     <div class="">
                         <img class="img-fluid" src="{{ asset($company_profile->company_image) }}" alt=""
-                            style="width: 100%;height: 100%;object-fit: cover;border-right:5px solid #00a652">
+                            style="width: 100%;height: 100%;object-fit: cover; border-right:5px solid #b9f4b9">
                     </div>
                 </div>
                 <!-- right -->
@@ -144,7 +144,7 @@
     <!-- Product category slider end  -->
 
     <!-- ======================= Products -->
-    <section class="portfolio pb-0">
+    <section class="portfolio pb-3">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex justify-content-center mb-0">
@@ -188,7 +188,7 @@
     <!-- ======================= Products -->
 
     <!-- Image gellary -->
-    <section class="portfolio pb-3" style="background-color: #aaa6a68a">
+    <section class="portfolio pb-3" style="background-color: #b9f4b9">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex justify-content-center mb-0">
@@ -208,7 +208,8 @@
                                         <a class="full-screen" href="{{ asset($photo_gallery->image) }}"
                                             data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
                                     </div>
-                                    <a href="{{ asset($photo_gallery->image) }}" class="image-link" style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;display: block;z-index:999"></a>
+                                    <a href="{{ asset($photo_gallery->image) }}" class="image-link"
+                                        style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;display: block;z-index:999"></a>
                                 </div>
                             </div>
                         @endforeach

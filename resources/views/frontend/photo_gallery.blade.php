@@ -1,5 +1,7 @@
-
 @extends('frontend.layouts.app')
+@push('front-css')
+    <link rel="stylesheet" href="{{ asset('ui/frontend/assets/vendor/viewbox/viewbox.css') }}">
+@endpush
 @section('content')
 <section class="first-section hero-wrap hero-wrap-2">
     <!-- <div class="overlay"></div> -->
@@ -32,10 +34,12 @@
                                     <img src="{{ asset($photo_gallery->image) }}" alt=""
                                         style="height: 180px; width: 100%; border: 1px solid #00a652">
                                 </div>
-                                <div class="portfolio-card-footer">
+                                {{-- <div class="portfolio-card-footer">
                                     <a class="full-screen" href="{{ asset($photo_gallery->image) }}"
                                         data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                </div>
+                                </div> --}}
+                                <a href="{{ asset($photo_gallery->image) }}" class="image-link"
+                                    style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;display: block;z-index:999"></a>
                             </div>
                         </div>
                     @endforeach
@@ -43,33 +47,16 @@
             </div>
         </div>
     </div>
-    {{-- <div class="container-fluid">
-        <div class="row">
-            <div class="d-flex justify-content-center mb-3">
-                <h2 class="heading"><b>PHOTO GALLERY</b></h2>
-            </div>
-            <div class="col-md-12 p-0 mb-4">
-                <div class="portfolio-wrap grid items-5 items-padding">
-                    <!-- Image-card -->
-                    @foreach ($photo_galleries as $photo_gallery)
-                        <div class="portfolio-card isotope-item digital">
-                            <div class="portfolio-card-body">
-                                <div class="portfolio-card-header">
-                                    <img src="{{ asset($photo_gallery->image) }}" alt=""
-                                        style="width: 258px; height: 172px">
-                                </div>
-                                <div class="portfolio-card-footer">
-                                    <a class="full-screen" href="{{ asset($photo_gallery->image) }}" data-glightbox=""
-                                        data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div> --}}
 </section>
-<!-- =======================
-Image gellary -->
+<!-- ======================= Image gellary -->
 @endsection
+
+@push('front-js')
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{{ asset('ui/frontend/assets/vendor/viewbox/viewbox.min.js') }}"></script>
+    <script>
+        $(function(){
+            $('.image-link').viewbox();
+        });
+    </script>
+@endpush

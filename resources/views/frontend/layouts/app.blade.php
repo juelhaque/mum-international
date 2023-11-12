@@ -41,9 +41,9 @@
 </head>
 
 <body>
-    <div class="preloader">
-        {{-- <img src="{{ asset($company_profile->company_logo) }}" alt="Pre-loader" > --}}
-    </div>
+    {{-- <div class="preloader">
+        <img src="{{ asset($company_profile->company_logo) }}" alt="Pre-loader" >
+    </div> --}}
 
     <!-- =======================
  header Start-->

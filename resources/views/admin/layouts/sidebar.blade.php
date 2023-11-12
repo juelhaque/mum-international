@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #04364A">
     <!-- Brand Logo -->
     <a href="{{route('dashboard')}}" class="brand-link">
-        <img src="{{ asset('ui/backend/img/at 3.49.08 PM.jpeg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="{{ asset('ui/backend/img/at 3.49.08 PM.jpeg') }}" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text">MUM INTERNATIONAL</span>
     </a>
     <!-- Sidebar -->
@@ -77,12 +77,12 @@
                         <p>Company Profile</p>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a href="users.html" class="nav-link">
+                <li class="nav-item">
+                    <a href="{{ route('user.index') }}" class="nav-link">
                         <i class="nav-icon  fas fa-users"></i>
                         <p>Users</p>
                     </a>
-                </li> --}}
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

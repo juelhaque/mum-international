@@ -10,6 +10,7 @@ use App\Http\Controllers\admin\MessageController;
 use App\Http\Controllers\admin\NewsEventController;
 use App\Http\Controllers\admin\PhotoGalleryController;
 use App\Http\Controllers\admin\ProductController;
+use App\Http\Controllers\admin\RegistrationController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\admin\VideoGalleryController;
 use App\Http\Controllers\HomeController;
@@ -43,8 +44,6 @@ Route::get('/news_event_details/{id}', [HomeController::class, 'newsEventDetails
 //Backend Route
 Route::group(['middleware' => 'guest'], function () {
 
-    Route::get('/register', [AuthController::class, 'registerView'])->name('register');
-    Route::post('/register', [AuthController::class, 'register'])->name('register');
     Route::get('/login', [AuthController::class, 'index'])->name('login');
     Route::post('/login', [AuthController::class, 'login'])->name('login');
 });
@@ -53,6 +52,16 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::put('/change-password', [AuthController::class, 'changePassword'])->name('password.change');
+
+    // Create user
+    Route::get('/user', [RegistrationController::class, 'index'])->name('user.index');
+    Route::get('/user/create', [RegistrationController::class, 'create'])->name('user.create');
+    Route::post('/user', [RegistrationController::class, 'store'])->name('user.store');
+    Route::get('/user/{id}/edit', [RegistrationController::class, 'edit'])->name('user.edit');
+    Route::put('/user/{id}', [RegistrationController::class, 'update'])->name('user.update');
+    Route::get('/user/{id}', [RegistrationController::class, 'destroy'])->name('user.destroy');
 
     //Slider routes
     Route::get('/sliders', [SliderController::class, 'index'])->name('sliders.index');

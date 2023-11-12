@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 @section('content')
-<section class="content-header">					
+<section class="content-header">
     <div class="container-fluid my-2">
         <div class="row mb-2">
             <div class="col-sm-6">
@@ -17,11 +17,11 @@
 <section class="content">
     <!-- Default box -->
     <div class="container-fluid">
-        <div class="card">            
+        <div class="card">
             <div class="card-body table-responsive p-0">
                 <div class="p-3">
                     <form action="{{route('photo-gallery.store')}}" method="POST" enctype="multipart/form-data">
-                        @csrf                      
+                        @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" name="name" id="name" value="" aria-describedby="emailHelp">
@@ -32,8 +32,7 @@
                             <div class="mb-3 form-check">
                                 <label for="file">Image</label>
                                 <input type="file" name="image" accept="image/*" onchange="readURL(this)" />
-                            </div>   
-                            
+                            </div>
                             <img id="img-preview" src="https://ami-sni.com/wp-content/themes/consultix/images/no-image-found-360x250.png" width="250px" />
                             <br><br>
                         <button type="submit" class="btn btn-primary">Create</button>

@@ -18,12 +18,9 @@
 <!-- ======================= about us  -->
 <section>
     <div class="container-fluid mb-5">
-        {{-- <div class="d-flex justify-content-center mb-3">
-			<h2 class="heading"><b>ABOUT MUM-INTERNATIONAL</b></h2>
-		</div> --}}
         <div class="row">
             <div class="col-md-12">
-                <div style="border-top: 12px solid #00a652;border-bottom: 12px solid #00a652;"></div>
+                <div style="border-top: 5px solid #b9f4b9;border-bottom: 5px solid #b9f4b9;"></div>
             </div>
         </div>
         <div class="row">
@@ -39,7 +36,7 @@
             <div class="col-md-6 ps-lg-5">
                 <div class="row">
                     <img class="img-fluid" src="{{ asset($company_profile->company_image) }}" alt=""
-                    style="width: 100%; height: 100%; object-fit: cover; border-left:5px solid #00a652">
+                    style="width: 100%; height: 100%; object-fit: cover; border-left:5px solid #b9f4b9">
                 </div>
             </div>
         </div>

@@ -15,7 +15,6 @@
                             </div>
                             <!-- footer logo End -->
                         </a>
-                        {{-- <p class="mt-3">{!! $company_profile->about_description !!}</p> --}}
                         <p class="font">{{ $company_profile->short_description }}</p>
                     </div>
                 </div>

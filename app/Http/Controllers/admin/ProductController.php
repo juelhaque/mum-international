@@ -75,11 +75,9 @@ class ProductController extends Controller
             $products->description = $request->description;
             $products->short_description = $request->short_description;
             if ($request->hasfile('image')) {
-
                 if (file_exists($products->image) && $products->image != null) {
                     unlink($products->image);
                 }
-
                 $image = $request->file('image');
                 $ext = $image->getClientOriginalExtension();
                 $imageName = rand() . "." . $ext;

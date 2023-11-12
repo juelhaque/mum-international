@@ -19,17 +19,17 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link p-0 pr-3" data-toggle="dropdown" href="#">
-                <img src="{{asset('ui/backend/img/avatar5.png')}}" class='img-circle elevation-2' width="40" height="40" alt="">
+                <img src="{{asset(Auth::user()->image)}}" class='img-circle elevation-2' width="40" height="40" alt="">
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-3">
-                <h4 class="h4 mb-0"><strong>Mum International</strong></h4>
-                <div class="mb-3">muminternational@example.com</div>
+                <h4 class="h4 mb-0"><strong>{{ Auth::user()->name }}</strong></h4>
+                <div class="mb-3">{{ Auth::user()->email }}</div>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-user-cog mr-2"></i> Settings
+                <a href="{{route('user.edit', Auth::user()->id)}}" class="dropdown-item">
+                    <i class="fas fa-user-cog mr-2"></i> My Account
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
+                <a href="{{route('password.change', Auth::user()->id)}}" data-toggle="modal" data-target="#passwordChange" class="dropdown-item">
                     <i class="fas fa-lock mr-2"></i> Change Password
                 </a>
                 <div class="dropdown-divider"></div>

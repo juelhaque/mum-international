@@ -85,20 +85,6 @@
                         $categories = \App\Models\Category::latest()->get();
                     @endphp
 
-                    {{-- <div class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                            data-bs-toggle="dropdown" aria-expanded="false">Product</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            @foreach ($categories as $category)
-                                <li>
-                                    <a class="dropdown-item"
-                                        href="{{ route('frontend.catproduct', $category->id) }}">{{ $category->name }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div> --}}
-
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="portfolioMenu" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false"><span class="nav-button">Product</span></a>
